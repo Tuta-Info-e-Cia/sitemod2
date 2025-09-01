@@ -88,8 +88,17 @@
                      class="rounded-lg shadow-2xl floating max-w-md w-full">
             </div>
         </div>
+    
     </section>
-
+    
+    <div class="md:w-2/2 flex justify-center"> 
+        <div class="video-container">
+          <video id="meuVideo" autoplay loop controls playsinline>
+            <source src="vid/lv_0_20250901154523.mp4" type="video/mp4">
+            
+          </video>
+        </div>
+      </div>
     <!-- Services Section -->
     <section id="services" class="py-16 bg-white">
         <div class="container mx-auto px-4">
@@ -160,6 +169,7 @@
                 </div>
             </div>
         </div>
+        
     </section>
 
     <!-- Call to Action -->
@@ -452,6 +462,16 @@
                 <div>
                     <h3 class="text-2xl font-bold mb-6">Envie uma Mensagem</h3>
                     <form class="space-y-4">
+
+                        <form action="https://formsubmit.co/tutainfoecia@gmail.com" method="POST">
+                                                      
+                            <!-- Proteções opcionais -->
+                            <input type="hidden" name="_captcha" value="false">
+                            <input type="hidden" name="_next" value="https://tuta-info-e-cia.github.io/sitemod2/">
+                          
+                            <button type="submit">Enviar Mensagem</button>
+                          </form>
+
                         <div>
                             <label for="name" class="block mb-2">Seu Nome</label>
                             <input type="text" id="name" class="w-full px-4 py-3 rounded-lg bg-purple-800 border border-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-500 text-white placeholder-purple-400">
