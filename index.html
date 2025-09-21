@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,30 +9,52 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         @keyframes float {
-            0% { transform: translateY(0px); }
-            50% { transform: translateY(-15px); }
-            100% { transform: translateY(0px); }
+            0% {
+                transform: translateY(0px);
+            }
+
+            50% {
+                transform: translateY(-15px);
+            }
+
+            100% {
+                transform: translateY(0px);
+            }
         }
+
         .floating {
             animation: float 3s ease-in-out infinite;
         }
+
         .gradient-bg {
             background: linear-gradient(135deg, #6e48aa 0%, #9d50bb 100%);
         }
+
         .service-card:hover {
             transform: translateY(-10px);
             box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
         }
+
         .pulse {
             animation: pulse 2s infinite;
         }
+
         @keyframes pulse {
-            0% { transform: scale(1); }
-            50% { transform: scale(1.05); }
-            100% { transform: scale(1); }
+            0% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.05);
+            }
+
+            100% {
+                transform: scale(1);
+            }
         }
     </style>
 </head>
+
 <body class="font-sans bg-gray-50">
     <!-- Header with Navigation -->
     <header class="gradient-bg text-white shadow-lg">
@@ -72,119 +95,127 @@
         <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
             <div class="md:w-1/2 mb-10 md:mb-0">
                 <h2 class="text-4xl md:text-5xl font-bold mb-6">Soluções Tecnológicas com Qualidade e Garantia</h2>
-                <p class="text-xl mb-8">Manutenção, consertos e reparos de desktop, notebook, all-in-one e tablet com profissionais qualificados.</p>
+                <p class="text-xl mb-8">Manutenção, consertos e reparos de desktop, notebook, all-in-one e tablet com
+                    profissionais qualificados.</p>
                 <div class="flex flex-wrap gap-4">
-                    <a href="https://wa.me/+5521969061550" target="_blank" class="bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-full font-semibold flex items-center gap-2 transition">
+                    <a href="https://wa.me/+5521969061550" target="_blank"
+                        class="bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-full font-semibold flex items-center gap-2 transition">
                         <i class="fab fa-whatsapp"></i> WhatsApp
                     </a>
-                    <a href="#contact" class="bg-white hover:bg-gray-100 text-purple-800 px-6 py-3 rounded-full font-semibold flex items-center gap-2 transition">
+                    <a href="#contact"
+                        class="bg-white hover:bg-gray-100 text-purple-800 px-6 py-3 rounded-full font-semibold flex items-center gap-2 transition">
                         <i class="fas fa-envelope"></i> Fale Conosco
                     </a>
                 </div>
             </div>
             <div class="md:w-1/2 flex justify-center">
-                <img src="img/logo1.jpg" 
-                     alt="Tutá Info Logo" 
-                     class="rounded-lg shadow-2xl floating max-w-md w-full">
+                <img src="img/logo1.jpg" alt="Tutá Info Logo" class="rounded-lg shadow-2xl floating max-w-md w-full">
             </div>
         </div>
-    
+
     </section>
-    
-    <div class="md:w-2/2 flex justify-center"> 
+
+    <div class="md:w-2/2 flex justify-center">
         <div class="video-container">
-            <iframe width="560" height="315" src="https://youtube.com/embed/A3Zh2XgTjp8?si=qnSeXrG1IbPEeEIi" 
-            title="Bem Vindo a Tutá Info!!" 
-            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-            referrerpolicy="strict-origin-when-cross-origin" 
-            allowfullscreen>
-        </iframe>
-          </video>
+            <iframe width="560" height="315" src="https://youtube.com/embed/A3Zh2XgTjp8?si=qnSeXrG1IbPEeEIi"
+                title="Bem Vindo a Tutá Info!!" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+            </iframe>
+            </video>
         </div>
-      </div>
+    </div>
     <!-- Services Section -->
     <section id="services" class="py-16 bg-white">
         <div class="container mx-auto px-4">
             <div class="text-center mb-16">
                 <h2 class="text-3xl md:text-4xl font-bold text-purple-900 mb-4">Nossos Serviços</h2>
-                <p class="text-lg text-gray-600 max-w-3xl mx-auto">Oferecemos soluções completas para todos os seus problemas tecnológicos com garantia e qualidade.</p>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">Oferecemos soluções completas para todos os seus
+                    problemas tecnológicos com garantia e qualidade.</p>
             </div>
-            
+
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                 <!-- Service 1 -->
                 <div class="bg-white rounded-xl shadow-lg overflow-hidden service-card transition duration-300">
                     <div class="h-48 overflow-hidden">
-                        <img src="img/Revisao-de-Notebooks.jpg" 
-                             alt="Notebook repair" class="w-full h-full object-cover">
+                        <img src="img/Revisao-de-Notebooks.jpg" alt="Notebook repair"
+                            class="w-full h-full object-cover">
                     </div>
                     <div class="p-6">
                         <div class="text-purple-800 text-3xl mb-4">
                             <i class="fas fa-laptop"></i>
                         </div>
                         <h3 class="text-xl font-bold mb-2">Reparo de Notebooks</h3>
-                        <p class="text-gray-600">Conserto de placa mãe, troca de tela, teclado, cooler e muito mais com peças originais.</p>
+                        <p class="text-gray-600">Conserto de placa mãe, troca de tela, teclado, cooler e muito mais com
+                            peças originais.</p>
                     </div>
                 </div>
-                
+
                 <!-- Service 2 -->
                 <div class="bg-white rounded-xl shadow-lg overflow-hidden service-card transition duration-300">
                     <div class="h-48 overflow-hidden">
-                        <img src="img/reparodesk1.jpeg" 
-                             alt="Desktop repair" class="w-full h-full object-cover">
+                        <img src="img/reparodesk1.jpeg" alt="Desktop repair" class="w-full h-full object-cover">
                     </div>
                     <div class="p-6">
                         <div class="text-purple-800 text-3xl mb-4">
                             <i class="fas fa-desktop"></i>
                         </div>
                         <h3 class="text-xl font-bold mb-2">Manutenção de Desktops</h3>
-                        <p class="text-gray-600">Formatação, limpeza, montagem, upgrade de hardware e reparos em geral para seu computador.</p>
+                        <p class="text-gray-600">Formatação, limpeza, montagem, upgrade de hardware e reparos em geral
+                            para seu computador.</p>
                     </div>
                 </div>
-                
+
                 <!-- Service 3 -->
                 <div class="bg-white rounded-xl shadow-lg overflow-hidden service-card transition duration-300">
                     <div class="h-48 overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1561154464-82e9adf32764?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" 
-                             alt="Tablet repair" class="w-full h-full object-cover">
+                        <img src="https://images.unsplash.com/photo-1561154464-82e9adf32764?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80"
+                            alt="Tablet repair" class="w-full h-full object-cover">
                     </div>
                     <div class="p-6">
                         <div class="text-purple-800 text-3xl mb-4">
                             <i class="fas fa-tablet-alt"></i>
                         </div>
                         <h3 class="text-xl font-bold mb-2">Reparo de Tablets</h3>
-                        <p class="text-gray-600">Troca de tela, bateria, conector de carga e outros serviços para seu tablet.</p>
+                        <p class="text-gray-600">Troca de tela, bateria, conector de carga e outros serviços para seu
+                            tablet.</p>
                     </div>
                 </div>
-                
+
                 <!-- Service 4 -->
                 <div class="bg-white rounded-xl shadow-lg overflow-hidden service-card transition duration-300">
                     <div class="h-48 overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1551033406-611cf9a28f67?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" 
-                             alt="Programação Sofware e Sites" class="w-full h-full object-cover">
+                        <img src="https://images.unsplash.com/photo-1551033406-611cf9a28f67?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80"
+                            alt="Programação Sofware e Sites" class="w-full h-full object-cover">
                     </div>
                     <div class="p-6">
                         <div class="text-purple-800 text-3xl mb-4">
                             <i class="fas fa-hdd"></i>
                         </div>
                         <h3 class="text-xl font-bold mb-2">Programação / Softwares / Criação de Sites</h3>
-                        <p class="text-gray-600">Nosso Time de Especialistas conta com programadores e especialistas aptos a desenvolver softwares e programas para uso pessoal e comercial e desenvolvimento de sites em diversas plataformas e modelos - Confira!</p>
+                        <p class="text-gray-600">Nosso Time de Especialistas conta com programadores e especialistas
+                            aptos a desenvolver softwares e programas para uso pessoal e comercial e desenvolvimento de
+                            sites em diversas plataformas e modelos - Confira!</p>
                     </div>
                 </div>
             </div>
         </div>
-        
+
     </section>
 
     <!-- Call to Action -->
     <section class="py-16 bg-purple-100">
         <div class="container mx-auto px-4 text-center">
             <h2 class="text-3xl md:text-4xl font-bold text-purple-900 mb-6">Precisa de ajuda com seu equipamento?</h2>
-            <p class="text-xl text-gray-700 mb-8">Entre em contato agora mesmo e agende uma visita técnica ou traga seu equipamento para avaliação gratuita!</p>
+            <p class="text-xl text-gray-700 mb-8">Entre em contato agora mesmo e agende uma visita técnica ou traga seu
+                equipamento para avaliação gratuita!</p>
             <div class="flex flex-wrap justify-center gap-4">
-                <a href="https://wa.me/+5521969061550" target="_blank" class="bg-green-500 hover:bg-green-600 text-white px-8 py-4 rounded-full font-semibold flex items-center gap-2 transition pulse">
+                <a href="https://wa.me/+5521969061550" target="_blank"
+                    class="bg-green-500 hover:bg-green-600 text-white px-8 py-4 rounded-full font-semibold flex items-center gap-2 transition pulse">
                     <i class="fab fa-whatsapp"></i> Chamar no WhatsApp
                 </a>
-                <a href="tel:+5521969061550" class="bg-purple-800 hover:bg-purple-900 text-white px-8 py-4 rounded-full font-semibold flex items-center gap-2 transition">
+                <a href="tel:+5521969061550"
+                    class="bg-purple-800 hover:bg-purple-900 text-white px-8 py-4 rounded-full font-semibold flex items-center gap-2 transition">
                     <i class="fas fa-phone-alt"></i> Ligar Agora
                 </a>
             </div>
@@ -196,15 +227,16 @@
         <div class="container mx-auto px-4">
             <div class="flex flex-col md:flex-row items-center">
                 <div class="md:w-1/2 mb-10 md:mb-0 md:pr-10">
-                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
-                         alt="Sobre a Tutá Info" 
-                         class="rounded-lg shadow-xl w-full">
+                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                        alt="Sobre a Tutá Info" class="rounded-lg shadow-xl w-full">
                 </div>
                 <div class="md:w-1/2">
                     <h2 class="text-3xl md:text-4xl font-bold text-purple-900 mb-6">Sobre a Tutá Info e Cia</h2>
-                    <p class="text-gray-600 mb-4">Profissionais com mais de 10 anos no mercado, a Tutá Info se destaca pela qualidade dos serviços prestados e atendimento personalizado de excelência.</p>
-                    <p class="text-gray-600 mb-6">Nossa equipe é composta por técnicos certificados e experientes, sempre atualizados com as últimas tecnologias e técnicas de reparo.</p>
-                    
+                    <p class="text-gray-600 mb-4">Profissionais com mais de 10 anos no mercado, a Tutá Info se destaca
+                        pela qualidade dos serviços prestados e atendimento personalizado de excelência.</p>
+                    <p class="text-gray-600 mb-6">Nossa equipe é composta por técnicos certificados e experientes,
+                        sempre atualizados com as últimas tecnologias e técnicas de reparo.</p>
+
                     <div class="space-y-4">
                         <div class="flex items-start">
                             <div class="text-purple-800 text-xl mr-4 mt-1">
@@ -212,7 +244,8 @@
                             </div>
                             <div>
                                 <h4 class="font-bold text-lg">Atendimento Rápido</h4>
-                                <p class="text-gray-600">Muitos reparos são realizados no mesmo dia, conforme disponibilidade.</p>
+                                <p class="text-gray-600">Muitos reparos são realizados no mesmo dia, conforme
+                                    disponibilidade.</p>
                             </div>
                         </div>
                         <div class="flex items-start">
@@ -221,7 +254,8 @@
                             </div>
                             <div>
                                 <h4 class="font-bold text-lg">Garantia nos Serviços</h4>
-                                <p class="text-gray-600">Todos os nossos serviços possuem garantia para sua tranquilidade.</p>
+                                <p class="text-gray-600">Todos os nossos serviços possuem garantia para sua
+                                    tranquilidade.</p>
                             </div>
                         </div>
                         <div class="flex items-start">
@@ -230,7 +264,8 @@
                             </div>
                             <div>
                                 <h4 class="font-bold text-lg">Orçamento Sem Compromisso</h4>
-                                <p class="text-gray-600">Faça uma avaliação gratuita do seu equipamento sem compromisso.</p>
+                                <p class="text-gray-600">Faça uma avaliação gratuita do seu equipamento sem compromisso.
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -244,137 +279,115 @@
         <div class="container mx-auto px-4">
             <div class="text-center mb-16">
                 <h2 class="text-3xl md:text-4xl font-bold text-purple-900 mb-4">Loja Virtual</h2>
-                <p class="text-lg text-gray-600 max-w-3xl mx-auto">Confira nossos produtos à venda no Mercado Livre com entregas para todo o Brasil.</p>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">Confira nossos produtos à venda no Mercado Livre com
+                    entregas para todo o Brasil.</p>
             </div>
-            
+
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <!-- Product 1 -->
                 <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition duration-300">
                     <div class="h-64 overflow-hidden">
-                        <img src="img/desk2.jpeg" 
-                             alt="Desktop" class="w-full h-full object-cover">
+                        <img src="img/desk2.jpeg" alt="Desktop" class="w-full h-full object-cover">
                     </div>
                     <div class="p-6">
                         <h3 class="text-xl font-bold mb-2">Desktop's</h3>
                         <p class="text-gray-600 mb-4">Desktop's diversos das melhores marcas e modelos.</p>
                         <div class="flex justify-between items-center">
                             <span class="text-2xl font-bold text-purple-800">R$ Consulte!</span>
-                            <a href="https://produto.mercadolivre.com.br/MLB-5514466208-computador-montado-testado-e-em-perfeito-estado-_JM" target="_blank" class="bg-purple-800 hover:bg-purple-900 text-white px-4 py-2 rounded-lg font-medium transition">
+                            <a href="https://produto.mercadolivre.com.br/MLB-5514466208-computador-montado-testado-e-em-perfeito-estado-_JM"
+                                target="_blank"
+                                class="bg-purple-800 hover:bg-purple-900 text-white px-4 py-2 rounded-lg font-medium transition">
                                 Comprar
                             </a>
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- Product 2 -->
                 <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition duration-300">
                     <div class="h-64 overflow-hidden">
-                        <img src="img/serv1.jpg" 
-                             alt="Manutençao e serviços" class="w-full h-full object-cover">
+                        <img src="img/serv1.jpg" alt="Manutençao e serviços" class="w-full h-full object-cover">
                     </div>
                     <div class="p-6">
                         <h3 class="text-xl font-bold mb-2">Manutençao e Serviços </h3>
                         <p class="text-gray-600 mb-4">Agende seu horário!</p>
                         <div class="flex justify-between items-center">
                             <span class="text-2xl font-bold text-purple-800">R$ Consulte!</span>
-                            <a href="https://suporte-tecnico.mercadolivre.com.br/MLB-5613268774-conserto-manutenco-e-reparo-de-informatica-_JM" target="_blank" class="bg-purple-800 hover:bg-purple-900 text-white px-4 py-2 rounded-lg font-medium transition">
+                            <a href="https://suporte-tecnico.mercadolivre.com.br/MLB-5613268774-conserto-manutenco-e-reparo-de-informatica-_JM"
+                                target="_blank"
+                                class="bg-purple-800 hover:bg-purple-900 text-white px-4 py-2 rounded-lg font-medium transition">
                                 Comprar
                             </a>
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- Product 3 -->
                 <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition duration-300">
                     <div class="h-64 overflow-hidden">
-                        <img src="img/D_NQ_NP_742700-MLB88097009418_072025-O-computador-montado-testado-e-em-perfeito-estado.webp" 
-                             alt="Hardware e Peças" class="w-full h-full object-cover">
+                        <img src="img/D_NQ_NP_742700-MLB88097009418_072025-O-computador-montado-testado-e-em-perfeito-estado.webp"
+                            alt="Hardware e Peças" class="w-full h-full object-cover">
                     </div>
                     <div class="p-6">
                         <h3 class="text-xl font-bold mb-2">Hardware e Pecas</h3>
                         <p class="text-gray-600 mb-4">Pecas de hardware diversos das melhores marcas e modelos.</p>
                         <div class="flex justify-between items-center">
                             <span class="text-2xl font-bold text-purple-800">R$ Consulte!</span>
-                            <a href="https://produto.mercadolivre.com.br/MLB-5650259624-kit-asusp5pe-vm-pentium4lga775-1gb-ram-placa-rede-pci-_JM" target="_blank" class="bg-purple-800 hover:bg-purple-900 text-white px-4 py-2 rounded-lg font-medium transition">
+                            <a href="https://produto.mercadolivre.com.br/MLB-5650259624-kit-asusp5pe-vm-pentium4lga775-1gb-ram-placa-rede-pci-_JM"
+                                target="_blank"
+                                class="bg-purple-800 hover:bg-purple-900 text-white px-4 py-2 rounded-lg font-medium transition">
                                 Comprar
                             </a>
                         </div>
                     </div>
                 </div>
             </div>
-                <!-- Product 4 -->
-                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition duration-300">
-                    <div class="h-64 overflow-hidden">
-                        <img src="img/switch3com001.jpg" 
-                             alt="Switch 3Com 24 Portas" class="w-full h-full object-cover">
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2">Switch 3Com 24 Portas </h3>
-                        <p class="text-gray-600 mb-4">Confira essa oferta incrível!</p>
-                        <div class="flex justify-between items-center">
-                            <span class="text-2xl font-bold text-purple-800">R$ Consulte!</span>
-                            <a href="https://produto.mercadolivre.com.br/MLB-4187915837-switch-3com-superstack-ii-3300-24x-portas-10100-seminovo-_JM" target="_blank" class="bg-purple-800 hover:bg-purple-900 text-white px-4 py-2 rounded-lg font-medium transition">
-                                Comprar
-                            </a>
-                        </div>
+            <!-- Product 4 -->
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition duration-300">
+                <div class="h-64 overflow-hidden">
+                    <img src="img/switch3com001.jpg" alt="Switch 3Com 24 Portas" class="w-full h-full object-cover">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-2">Switch 3Com 24 Portas </h3>
+                    <p class="text-gray-600 mb-4">Confira essa oferta incrível!</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-2xl font-bold text-purple-800">R$ Consulte!</span>
+                        <a href="https://produto.mercadolivre.com.br/MLB-4187915837-switch-3com-superstack-ii-3300-24x-portas-10100-seminovo-_JM"
+                            target="_blank"
+                            class="bg-purple-800 hover:bg-purple-900 text-white px-4 py-2 rounded-lg font-medium transition">
+                            Comprar
+                        </a>
                     </div>
                 </div>
+            </div>
 
-                <!-- Product 5 -->
-                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition duration-300">
-                    <div class="h-64 overflow-hidden">
-                        <img src="img/switch10-base-t.jpg" 
-                             alt="Switch 16 portas 10 Base-T" class="w-full h-full object-cover">
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2">Switch 16 portas 10 Base-T </h3>
-                        <p class="text-gray-600 mb-4">Confira essa oferta incrível!</p>
-                        <div class="flex justify-between items-center">
-                            <span class="text-2xl font-bold text-purple-800">R$ Consulte!</span>
-                            <a href="https://produto.mercadolivre.com.br/MLB-4187974347-switch-16-portas-ether-h16-10-base-t-ethernet-hub-_JM" target="_blank" class="bg-purple-800 hover:bg-purple-900 text-white px-4 py-2 rounded-lg font-medium transition">
-                                Comprar
-                            </a>
-                        </div>
+            <!-- Product 5 -->
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition duration-300">
+                <div class="h-64 overflow-hidden">
+                    <img src="img/switch10-base-t.jpg" alt="Switch 16 portas 10 Base-T"
+                        class="w-full h-full object-cover">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-2">Switch 16 portas 10 Base-T </h3>
+                    <p class="text-gray-600 mb-4">Confira essa oferta incrível!</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-2xl font-bold text-purple-800">R$ Consulte!</span>
+                        <a href="https://produto.mercadolivre.com.br/MLB-4187974347-switch-16-portas-ether-h16-10-base-t-ethernet-hub-_JM"
+                            target="_blank"
+                            class="bg-purple-800 hover:bg-purple-900 text-white px-4 py-2 rounded-lg font-medium transition">
+                            Comprar
+                        </a>
                     </div>
                 </div>
+            </div>
 
-                <!-- Product 6 -->
-                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition duration-300">
-                    <div class="h-64 overflow-hidden">
-                        <img src="img/acadap1modem.jpg" 
-                             alt="Fonte AC Adapter Modem e Router entre outros" class="w-full h-full object-cover">
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2">Fonte AC Adapter Modem e Router entre outros </h3>
-                        <p class="text-gray-600 mb-4">Confira essa oferta incrível!</p>
-                        <div class="flex justify-between items-center">
-                            <span class="text-2xl font-bold text-purple-800">R$ Consulte!</span>
-                            <a href="https://produto.mercadolivre.com.br/MLB-4187950519-ac-adap-leader-eletronics-model-nu20-5120125-43-12v125a-_JM" target="_blank" class="bg-purple-800 hover:bg-purple-900 text-white px-4 py-2 rounded-lg font-medium transition">
-                                Comprar
-                            </a>
-                        </div>
-                    </div>
-                </div>
+            
 
-                <!-- Product 7 -->
-                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition duration-300">
-                    <div class="h-64 overflow-hidden">
-                        <img src="img/acadapnotebook.jpg" 
-                             alt="Fonte AC Adapter Notebbok Diversos" class="w-full h-full object-cover">
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2">Fonte AC Adapter Notebbok Diversos </h3>
-                        <p class="text-gray-600 mb-4">Confira essa oferta incrível!</p>
-                        <div class="flex justify-between items-center">
-                            <span class="text-2xl font-bold text-purple-800">R$ Consulte!</span>
-                            <a href="https://produto.mercadolivre.com.br/MLB-4188035817-fonte-carregador-notebook-samsung-19v-316a-60w-_JM" target="_blank" class="bg-purple-800 hover:bg-purple-900 text-white px-4 py-2 rounded-lg font-medium transition">
-                                Comprar
-                            </a>
-                        </div>
-                    </div>
-                </div>
+        
             <div class="text-center mt-12">
-                <a href="https://suporte-tecnico.mercadolivre.com.br/MLB-5613268774-conserto-manutenco-e-reparo-de-informatica-_JM" target="_blank" class="inline-block bg-yellow-400 hover:bg-yellow-500 text-gray-900 px-8 py-4 rounded-full font-bold transition">
+                <a href="https://suporte-tecnico.mercadolivre.com.br/MLB-5613268774-conserto-manutenco-e-reparo-de-informatica-_JM"
+                    target="_blank"
+                    class="inline-block bg-yellow-400 hover:bg-yellow-500 text-gray-900 px-8 py-4 rounded-full font-bold transition">
                     <i class="fas fa-store mr-2"></i> Ver todos os produtos no Mercado Livre
                 </a>
             </div>
@@ -386,9 +399,10 @@
         <div class="container mx-auto px-4">
             <div class="text-center mb-16">
                 <h2 class="text-3xl md:text-4xl font-bold text-purple-900 mb-4">O que nossos clientes dizem</h2>
-                <p class="text-lg text-gray-600 max-w-3xl mx-auto">Veja a opinião de quem já utilizou nossos serviços.</p>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">Veja a opinião de quem já utilizou nossos serviços.
+                </p>
             </div>
-            
+
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <!-- Testimonial 1 -->
                 <div class="bg-gray-100 p-8 rounded-xl">
@@ -401,10 +415,13 @@
                             <i class="fas fa-star"></i>
                         </div>
                     </div>
-                    <p class="text-gray-700 mb-6">"Levei meu notebook que não ligava mais e em poucas horas me deram o diagnóstico preciso. Fizeram o conserto com peça original e ainda deram garantia. Recomendo!"</p>
+                    <p class="text-gray-700 mb-6">"Levei meu notebook que não ligava mais e em poucas horas me deram o
+                        diagnóstico preciso. Fizeram o conserto com peça original e ainda deram garantia. Recomendo!"
+                    </p>
                     <div class="flex items-center">
                         <div class="w-12 h-12 rounded-full overflow-hidden mr-4">
-                            <img src="https://randomuser.me/api/portraits/women/43.jpg" alt="Cliente" class="w-full h-full object-cover">
+                            <img src="https://randomuser.me/api/portraits/women/43.jpg" alt="Cliente"
+                                class="w-full h-full object-cover">
                         </div>
                         <div>
                             <h4 class="font-bold">Ana Carolina</h4>
@@ -412,7 +429,7 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- Testimonial 2 -->
                 <div class="bg-gray-100 p-8 rounded-xl">
                     <div class="flex items-center mb-4">
@@ -424,10 +441,13 @@
                             <i class="fas fa-star"></i>
                         </div>
                     </div>
-                    <p class="text-gray-700 mb-6">"Comprei um Macbook na loja virtual e o atendimento foi excelente. O produto chegou antes do prazo, bem embalado e exatamente como anunciado. Virei cliente fixo!"</p>
+                    <p class="text-gray-700 mb-6">"Comprei um Macbook na loja virtual e o atendimento foi excelente. O
+                        produto chegou antes do prazo, bem embalado e exatamente como anunciado. Virei cliente fixo!"
+                    </p>
                     <div class="flex items-center">
                         <div class="w-12 h-12 rounded-full overflow-hidden mr-4">
-                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Cliente" class="w-full h-full object-cover">
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Cliente"
+                                class="w-full h-full object-cover">
                         </div>
                         <div>
                             <h4 class="font-bold">Roberto Almeida</h4>
@@ -435,7 +455,7 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- Testimonial 3 -->
                 <div class="bg-gray-100 p-8 rounded-xl">
                     <div class="flex items-center mb-4">
@@ -447,10 +467,13 @@
                             <i class="fas fa-star-half-alt"></i>
                         </div>
                     </div>
-                    <p class="text-gray-700 mb-6">"Recuperaram todos os meus arquivos de um HD que não era mais reconhecido. O preço foi justo e o serviço foi feito com muita competência. Indico para todos meus amigos!"</p>
+                    <p class="text-gray-700 mb-6">"Recuperaram todos os meus arquivos de um HD que não era mais
+                        reconhecido. O preço foi justo e o serviço foi feito com muita competência. Indico para todos
+                        meus amigos!"</p>
                     <div class="flex items-center">
                         <div class="w-12 h-12 rounded-full overflow-hidden mr-4">
-                            <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Cliente" class="w-full h-full object-cover">
+                            <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Cliente"
+                                class="w-full h-full object-cover">
                         </div>
                         <div>
                             <h4 class="font-bold">Juliana Santos</h4>
@@ -467,13 +490,14 @@
         <div class="container mx-auto px-4">
             <div class="text-center mb-16">
                 <h2 class="text-3xl md:text-4xl font-bold mb-4">Entre em Contato</h2>
-                <p class="text-lg max-w-3xl mx-auto">Tem dúvidas ou precisa de um orçamento? Fale conosco através dos nossos canais de atendimento.</p>
+                <p class="text-lg max-w-3xl mx-auto">Tem dúvidas ou precisa de um orçamento? Fale conosco através dos
+                    nossos canais de atendimento.</p>
             </div>
-            
+
             <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
                 <div>
                     <h3 class="text-2xl font-bold mb-6">Informações de Contato</h3>
-                    
+
                     <div class="space-y-6">
                         <div class="flex items-start">
                             <div class="text-2xl mr-4 mt-1">
@@ -484,7 +508,7 @@
                                 <p>Rio de janeiro - Todos os bairros!<br>Rio de janeiro - Rj</p>
                             </div>
                         </div>
-                        
+
                         <div class="flex items-start">
                             <div class="text-2xl mr-4 mt-1">
                                 <i class="fas fa-phone-alt"></i>
@@ -494,7 +518,7 @@
                                 <p>(21) 96906-1550</p>
                             </div>
                         </div>
-                        
+
                         <div class="flex items-start">
                             <div class="text-2xl mr-4 mt-1">
                                 <i class="fas fa-envelope"></i>
@@ -504,7 +528,7 @@
                                 <p>tutainfoecia@gmail.com</p>
                             </div>
                         </div>
-                        
+
                         <div class="flex items-start">
                             <div class="text-2xl mr-4 mt-1">
                                 <i class="fas fa-clock"></i>
@@ -515,24 +539,27 @@
                             </div>
                         </div>
                     </div>
-                    
+
                     <div class="mt-10">
                         <h4 class="font-bold text-lg mb-4">Nos siga nas redes sociais</h4>
                         <div class="flex space-x-4">
-                            <a href="https://www.facebook.com/profile.php?id=100094454752093" target="_blank" class="bg-white text-purple-900 w-12 h-12 rounded-full flex items-center justify-center hover:bg-purple-100 transition">
+                            <a href="https://www.facebook.com/profile.php?id=100094454752093" target="_blank"
+                                class="bg-white text-purple-900 w-12 h-12 rounded-full flex items-center justify-center hover:bg-purple-100 transition">
                                 <i class="fab fa-facebook-f text-xl"></i>
                             </a>
-                            <a href="https://www.instagram.com/tuta_info/" target="_blank" class="bg-white text-purple-900 w-12 h-12 rounded-full flex items-center justify-center hover:bg-purple-100 transition">
+                            <a href="https://www.instagram.com/tuta_info/" target="_blank"
+                                class="bg-white text-purple-900 w-12 h-12 rounded-full flex items-center justify-center hover:bg-purple-100 transition">
                                 <i class="fab fa-instagram text-xl"></i>
                             </a>
-                            <a href="https://www.youtube.com/@tutainfo" target="_blank" class="bg-white text-purple-900 w-12 h-12 rounded-full flex items-center justify-center hover:bg-purple-100 transition">
+                            <a href="https://www.youtube.com/@tutainfo" target="_blank"
+                                class="bg-white text-purple-900 w-12 h-12 rounded-full flex items-center justify-center hover:bg-purple-100 transition">
                                 <i class="fab fa-youtube text-xl"></i>
                             </a>
                         </div>
                     </div>
                 </div>
-                
-             
+
+
             </div>
         </div>
     </section>
@@ -543,20 +570,24 @@
             <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
                 <div>
                     <h3 class="text-xl font-bold mb-4">Tutá Info</h3>
-                    <p class="mb-4">Soluções em tecnologia com qualidade e garantia para seus equipamentos eletrônicos.</p>
+                    <p class="mb-4">Soluções em tecnologia com qualidade e garantia para seus equipamentos eletrônicos.
+                    </p>
                     <div class="flex space-x-4">
-                        <a href="https://www.facebook.com/profile.php?id=100094454752093" target="_blank" class="text-white hover:text-purple-300 transition">
+                        <a href="https://www.facebook.com/profile.php?id=100094454752093" target="_blank"
+                            class="text-white hover:text-purple-300 transition">
                             <i class="fab fa-facebook-f"></i>
                         </a>
-                        <a href="https://www.instagram.com/tuta_info/" target="_blank" class="text-white hover:text-purple-300 transition">
+                        <a href="https://www.instagram.com/tuta_info/" target="_blank"
+                            class="text-white hover:text-purple-300 transition">
                             <i class="fab fa-instagram"></i>
                         </a>
-                        <a href="https://www.youtube.com/@tutainfo" target="_blank" class="text-white hover:text-purple-300 transition">
+                        <a href="https://www.youtube.com/@tutainfo" target="_blank"
+                            class="text-white hover:text-purple-300 transition">
                             <i class="fab fa-youtube"></i>
                         </a>
                     </div>
                 </div>
-                
+
                 <div>
                     <h4 class="font-bold text-lg mb-4">Links Rápidos</h4>
                     <ul class="space-y-2">
@@ -567,7 +598,7 @@
                         <li><a href="#contact" class="hover:text-purple-300 transition">Contato</a></li>
                     </ul>
                 </div>
-                
+
                 <div>
                     <h4 class="font-bold text-lg mb-4">Serviços</h4>
                     <ul class="space-y-2">
@@ -578,10 +609,10 @@
                         <li><a href="#" class="hover:text-purple-300 transition">Upgrade de Hardware</a></li>
                     </ul>
                 </div>
-                
-                
+
+
             </div>
-            
+
             <div class="border-t border-purple-800 mt-12 pt-8 text-center">
                 <p>&copy; 2023 Tutá Info Tecnologies. Todos os direitos reservados.</p>
             </div>
@@ -589,13 +620,14 @@
     </footer>
 
     <!-- Floating WhatsApp Button -->
-    <a href="https://wa.me/+5521969061550" target="_blank" class="fixed bottom-8 right-8 bg-green-500 text-white w-16 h-16 rounded-full flex items-center justify-center text-3xl shadow-lg hover:bg-green-600 transition z-50">
+    <a href="https://wa.me/+5521969061550" target="_blank"
+        class="fixed bottom-8 right-8 bg-green-500 text-white w-16 h-16 rounded-full flex items-center justify-center text-3xl shadow-lg hover:bg-green-600 transition z-50">
         <i class="fab fa-whatsapp"></i>
     </a>
 
     <script>
         // Mobile menu toggle
-        document.getElementById('menu-toggle').addEventListener('click', function() {
+        document.getElementById('menu-toggle').addEventListener('click', function () {
             const menu = document.getElementById('mobile-menu');
             menu.classList.toggle('hidden');
         });
@@ -604,16 +636,16 @@
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
-                
+
                 const targetId = this.getAttribute('href');
                 const targetElement = document.querySelector(targetId);
-                
+
                 if (targetElement) {
                     window.scrollTo({
                         top: targetElement.offsetTop - 80,
                         behavior: 'smooth'
                     });
-                    
+
                     // Close mobile menu if open
                     const mobileMenu = document.getElementById('mobile-menu');
                     if (!mobileMenu.classList.contains('hidden')) {
@@ -626,12 +658,21 @@
         // Form submission (example)
         const contactForm = document.querySelector('form');
         if (contactForm) {
-            contactForm.addEventListener('submit', function(e) {
+            contactForm.addEventListener('submit', function (e) {
                 e.preventDefault();
                 alert('Mensagem enviada com sucesso! Entraremos em contato em breve.');
                 this.reset();
             });
         }
+    </script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9KKVYTYMWE"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-9KKVYTYMWE');
     </script>
 
 </html>
