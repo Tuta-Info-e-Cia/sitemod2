@@ -32,7 +32,7 @@
 
         .service-card:hover {
             transform: translateY(-10px);
-            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
         }
 
         .pulse {
@@ -58,7 +58,6 @@
             padding-bottom: 56.25%;
             height: 0;
             overflow: hidden;
-            max-width: 100%;
         }
 
         .video-container iframe {
@@ -88,18 +87,16 @@
                         <li><a href="#contact" class="hover:text-yellow-300 transition">Contato</a></li>
                     </ul>
                 </nav>
-                <button class="md:hidden text-2xl" id="menu-toggle">
-                    <i class="fas fa-bars"></i>
-                </button>
+                <button class="md:hidden text-2xl" id="menu-toggle"><i class="fas fa-bars"></i></button>
             </div>
         </div>
         <div class="md:hidden hidden bg-purple-800" id="mobile-menu">
             <ul class="px-4 py-2 space-y-3">
-                <li><a href="#home" class="block py-2 hover:text-yellow-300 transition">Início</a></li>
-                <li><a href="#services" class="block py-2 hover:text-yellow-300 transition">Serviços</a></li>
-                <li><a href="#about" class="block py-2 hover:text-yellow-300 transition">Sobre Nós</a></li>
-                <li><a href="#store" class="block py-2 hover:text-yellow-300 transition">Loja Virtual</a></li>
-                <li><a href="#contact" class="block py-2 hover:text-yellow-300 transition">Contato</a></li>
+                <li><a href="#home" class="block py-2">Início</a></li>
+                <li><a href="#services" class="block py-2">Serviços</a></li>
+                <li><a href="#about" class="block py-2">Sobre Nós</a></li>
+                <li><a href="#store" class="block py-2">Loja Virtual</a></li>
+                <li><a href="#contact" class="block py-2">Contato</a></li>
             </ul>
         </div>
     </header>
@@ -108,17 +105,14 @@
         <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
             <div class="md:w-1/2 mb-10 md:mb-0">
                 <h2 class="text-4xl md:text-5xl font-bold mb-6">Soluções Tecnológicas com Qualidade e Garantia</h2>
-                <p class="text-xl mb-8">Manutenção, consertos e reparos de desktop, notebook, all-in-one e tablet com
-                    profissionais qualificados.</p>
+                <p class="text-xl mb-8">Manutenção, consertos e reparos de desktop, notebook, all-in-one e tablet.</p>
                 <div class="flex flex-wrap gap-4">
                     <a href="https://wa.me/+5521969061550" target="_blank"
-                        class="bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-full font-semibold flex items-center gap-2 transition">
-                        <i class="fab fa-whatsapp"></i> WhatsApp
-                    </a>
+                        class="bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-full font-semibold flex items-center gap-2 transition"><i
+                            class="fab fa-whatsapp"></i> WhatsApp</a>
                     <a href="#contact"
-                        class="bg-white hover:bg-gray-100 text-purple-800 px-6 py-3 rounded-full font-semibold flex items-center gap-2 transition">
-                        <i class="fas fa-envelope"></i> Fale Conosco
-                    </a>
+                        class="bg-white hover:bg-gray-100 text-purple-800 px-6 py-3 rounded-full font-semibold flex items-center gap-2 transition"><i
+                            class="fas fa-envelope"></i> Fale Conosco</a>
                 </div>
             </div>
             <div class="md:w-1/2 flex justify-center">
@@ -127,92 +121,74 @@
         </div>
     </section>
 
-    <section class="py-10 bg-white">
-        <div class="container mx-auto px-4 max-w-4xl">
-            <div class="video-container rounded-xl shadow-xl overflow-hidden">
-                <iframe src="https://youtube.com/embed/A3Zh2XgTjp8?si=qnSeXrG1IbPEeEIi" title="Bem Vindo a Tutá Info!!"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </div>
+    <div class="container mx-auto px-4 py-10">
+        <div class="video-container rounded-xl shadow-xl overflow-hidden max-w-4xl mx-auto">
+            <iframe src="https://youtube.com/embed/A3Zh2XgTjp8?si=qnSeXrG1IbPEeEIi" title="Bem Vindo a Tutá Info!!"
+                frameborder="0" allowfullscreen></iframe>
         </div>
-    </section>
-
-    <section id="services" class="py-16 bg-white">
-        <div class="container mx-auto px-4">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold text-purple-900 mb-4">Nossos Serviços</h2>
-                <p class="text-lg text-gray-600 max-w-3xl mx-auto">Oferecemos soluções completas para todos os seus
-                    problemas tecnológicos com garantia e qualidade.</p>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                <div class="bg-white rounded-xl shadow-lg overflow-hidden service-card transition duration-300">
-                    <div class="h-48 overflow-hidden">
-                        <img src="img/Revisao-de-Notebooks.jpg" alt="Notebook repair"
-                            class="w-full h-full object-cover">
-                    </div>
-                    <div class="p-6">
-                        <div class="text-purple-800 text-3xl mb-4"><i class="fas fa-laptop"></i></div>
-                        <h3 class="text-xl font-bold mb-2">Reparo de Notebooks</h3>
-                        <p class="text-gray-600">Conserto de placa mãe, troca de tela, teclado, cooler e muito mais.</p>
-                    </div>
-                </div>
-                <div class="bg-white rounded-xl shadow-lg overflow-hidden service-card transition duration-300">
-                    <div class="h-48 overflow-hidden">
-                        <img src="img/reparodesk1.jpeg" alt="Desktop repair" class="w-full h-full object-cover">
-                    </div>
-                    <div class="p-6">
-                        <div class="text-purple-800 text-3xl mb-4"><i class="fas fa-desktop"></i></div>
-                        <h3 class="text-xl font-bold mb-2">Manutenção de Desktops</h3>
-                        <p class="text-gray-600">Formatação, limpeza, montagem e upgrade de hardware.</p>
-                    </div>
-                </div>
-                <div class="bg-white rounded-xl shadow-lg overflow-hidden service-card transition duration-300">
-                    <div class="h-48 overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1561154464-82e9adf32764?auto=format&fit=crop&w=1374&q=80"
-                            alt="Tablet repair" class="w-full h-full object-cover">
-                    </div>
-                    <div class="p-6">
-                        <div class="text-purple-800 text-3xl mb-4"><i class="fas fa-tablet-alt"></i></div>
-                        <h3 class="text-xl font-bold mb-2">Reparo de Tablets</h3>
-                        <p class="text-gray-600">Troca de tela, bateria e conector de carga.</p>
-                    </div>
-                </div>
-                <div class="bg-white rounded-xl shadow-lg overflow-hidden service-card transition duration-300">
-                    <div class="h-48 overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1551033406-611cf9a28f67?auto=format&fit=crop&w=1374&q=80"
-                            alt="Software" class="w-full h-full object-cover">
-                    </div>
-                    <div class="p-6">
-                        <div class="text-purple-800 text-3xl mb-4"><i class="fas fa-code"></i></div>
-                        <h3 class="text-xl font-bold mb-2">Sistemas e Sites</h3>
-                        <p class="text-gray-600">Desenvolvimento de softwares e sites em diversas plataformas.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    </div>
 
     <section id="store" class="py-16 bg-gray-100">
         <div class="container mx-auto px-4">
             <div class="text-center mb-16">
                 <h2 class="text-3xl md:text-4xl font-bold text-purple-900 mb-4">Loja Virtual</h2>
-                <p class="text-lg text-gray-600 max-w-3xl mx-auto">Confira nossos produtos à venda.</p>
+                <p class="text-lg text-gray-600">Confira nossos produtos à venda com entregas para todo o Brasil.</p>
             </div>
+
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                 <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition duration-300">
-                    <div class="h-64 overflow-hidden">
-                        <img src="img/desk2.jpeg" alt="Desktop" class="w-full h-full object-cover">
+                    <div class="h-64 overflow-hidden"><img src="img/desk2.jpeg" class="w-full h-full object-cover">
                     </div>
                     <div class="p-6">
                         <h3 class="text-xl font-bold mb-2">Desktop's</h3>
-                        <p class="text-gray-600 mb-4 text-sm">Diversas marcas e modelos.</p>
+                        <p class="text-gray-600 mb-4">Desktop's diversos das melhores marcas e modelos.</p>
                         <div class="flex justify-between items-center">
-                            <span class="text-xl font-bold text-purple-800">Consulte!</span>
-                            <a href="https://rj.olx.com.br/rio-de-janeiro-e-regiao/informatica/computadores-e-desktops/computador-montado-com-processador-amd-phenom-1422267636"
-                                target="_blank"
-                                class="bg-purple-800 text-white px-4 py-2 rounded-lg text-sm">Comprar</a>
+                            <span class="text-xl font-bold text-purple-800">R$ Consulte!</span>
+                            <a href="https://rj.olx.com.br/rio-de-janeiro-e-regiao/informatica/computadores-e-desktops/computador-montado-com-processador-amd-phenom-1422267636?utm_medium=shared_link&utm_source=direct"
+                                target="_blank" class="bg-purple-800 text-white px-4 py-2 rounded-lg">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition duration-300">
+                    <div class="h-64 overflow-hidden"><img
+                            src="img/D_NQ_NP_742700-MLB88097009418_072025-O-computador-montado-testado-e-em-perfeito-estado.webp"
+                            class="w-full h-full object-cover"></div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Hardware e Peças</h3>
+                        <p class="text-gray-600 mb-4">Peças de hardware diversos das melhores marcas.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-xl font-bold text-purple-800">R$ Consulte!</span>
+                            <a href="https://rj.olx.com.br/rio-de-janeiro-e-regiao/informatica/pecas-de-hardware/kit-placa-asus-p5pe-vm-pentium-4-memoria-1gb-placa-rede-pci-1432430181?utm_medium=shared_link&utm_source=direct"
+                                target="_blank" class="bg-purple-800 text-white px-4 py-2 rounded-lg">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition duration-300">
+                    <div class="h-64 overflow-hidden"><img src="img/switch3com001.jpg"
+                            class="w-full h-full object-cover"></div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Switch 3Com 24 Portas</h3>
+                        <p class="text-gray-600 mb-4">Confira essa oferta incrível!</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-xl font-bold text-purple-800">R$ Consulte!</span>
+                            <a href="https://rj.olx.com.br/rio-de-janeiro-e-regiao/informatica/conectividade-e-dispositivos-de-rede/switch-superstack-stack-ii-3300-3com-seminovo-1433662162?utm_medium=shared_link&utm_source=direct"
+                                target="_blank" class="bg-purple-800 text-white px-4 py-2 rounded-lg">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition duration-300">
+                    <div class="h-64 overflow-hidden"><img src="img/switch10-base-t.jpg"
+                            class="w-full h-full object-cover"></div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Switch 16 portas</h3>
+                        <p class="text-gray-600 mb-4">Switch 10 Base-T Ethernet Hub Seminovo.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-xl font-bold text-purple-800">R$ Consulte!</span>
+                            <a href="https://rj.olx.com.br/rio-de-janeiro-e-regiao/informatica/conectividade-e-dispositivos-de-rede/switch-16-portas-ether-h-16-10-base-t-ethernet-hub-seminovo-1433685297?utm_medium=shared_link&utm_source=direct"
+                                target="_blank" class="bg-purple-800 text-white px-4 py-2 rounded-lg">Comprar</a>
                         </div>
                     </div>
                 </div>
@@ -224,46 +200,33 @@
         <div class="container mx-auto px-4">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
                 <div>
-                    <h2 class="text-3xl font-bold mb-8">Entre em Contato</h2>
+                    <h3 class="text-2xl font-bold mb-6">Informações de Contato</h3>
                     <div class="space-y-6">
-                        <div class="flex items-start">
-                            <i class="fas fa-map-marker-alt text-2xl mr-4 mt-1"></i>
-                            <div>
-                                <h4 class="font-bold">Local de Atendimento</h4>
-                                <p>Atendimento em domicílio em todos os bairros do Rio de Janeiro - RJ</p>
-                            </div>
-                        </div>
-                        <div class="flex items-start">
-                            <i class="fas fa-phone-alt text-2xl mr-4 mt-1"></i>
+                        <div class="flex items-start"><i class="fas fa-phone-alt mr-4 mt-1"></i>
                             <div>
                                 <h4 class="font-bold">Telefone</h4>
                                 <p>(21) 96906-1550</p>
                             </div>
                         </div>
-                        <div class="flex items-start">
-                            <i class="fas fa-envelope text-2xl mr-4 mt-1"></i>
+                        <div class="flex items-start"><i class="fas fa-envelope mr-4 mt-1"></i>
                             <div>
                                 <h4 class="font-bold">Email</h4>
                                 <p>tutainfoecia@gmail.com</p>
                             </div>
                         </div>
                     </div>
-
                     <div class="mt-10">
-                        <h4 class="font-bold text-lg mb-4">Siga-nos:</h4>
+                        <h4 class="font-bold text-lg mb-4">Nos siga nas redes sociais</h4>
                         <div class="flex space-x-4">
                             <a href="https://www.facebook.com/profile.php?id=100094454752093" target="_blank"
-                                class="bg-white text-purple-900 w-12 h-12 rounded-full flex items-center justify-center hover:bg-purple-100 transition shadow-lg">
-                                <i class="fab fa-facebook-f"></i>
-                            </a>
+                                class="bg-white text-purple-900 w-12 h-12 rounded-full flex items-center justify-center hover:bg-purple-100 transition"><i
+                                    class="fab fa-facebook-f text-xl"></i></a>
                             <a href="https://www.instagram.com/tuta.info/" target="_blank"
-                                class="bg-white text-purple-900 w-12 h-12 rounded-full flex items-center justify-center hover:bg-purple-100 transition shadow-lg">
-                                <i class="fab fa-instagram"></i>
-                            </a>
+                                class="bg-white text-purple-900 w-12 h-12 rounded-full flex items-center justify-center hover:bg-purple-100 transition"><i
+                                    class="fab fa-instagram text-xl"></i></a>
                             <a href="https://www.youtube.com/@tutainfo" target="_blank"
-                                class="bg-white text-purple-900 w-12 h-12 rounded-full flex items-center justify-center hover:bg-purple-100 transition shadow-lg">
-                                <i class="fab fa-youtube"></i>
-                            </a>
+                                class="bg-white text-purple-900 w-12 h-12 rounded-full flex items-center justify-center hover:bg-purple-100 transition"><i
+                                    class="fab fa-youtube text-xl"></i></a>
                         </div>
                     </div>
                 </div>
@@ -271,53 +234,8 @@
         </div>
     </section>
 
-    <footer class="bg-purple-950 text-white py-8 text-center border-t border-purple-800">
+    <footer class="bg-purple-950 text-white py-12 text-center">
         <p>&copy; 2023 Tutá Info Tecnologies. Todos os direitos reservados.</p>
     </footer>
 
-    <a href="https://wa.me/+5521969061550" target="_blank"
-        class="fixed bottom-8 right-8 bg-green-500 text-white w-16 h-16 rounded-full flex items-center justify-center text-3xl shadow-2xl hover:bg-green-600 transition z-[100] pulse">
-        <i class="fab fa-whatsapp"></i>
-    </a>
-
-    <a href="https://hotmart.com/pt-br/marketplace/produtos/curso-de-hardware-e-manutencao-em-informatica-100-ead/B102005164B"
-        target="_blank" class="fixed bottom-28 right-8 flex items-center group z-[100]">
-        <div
-            class="bg-purple-600 text-white w-16 h-16 rounded-full flex items-center justify-center text-2xl shadow-2xl group-hover:bg-purple-700 transition">
-            <i class="fas fa-graduation-cap"></i>
-        </div>
-        <span
-            class="absolute right-20 bg-purple-700 text-white px-3 py-1 rounded-lg opacity-0 group-hover:opacity-100 transition-all whitespace-nowrap shadow-lg">
-            Cursos EAD
-        </span>
-    </a>
-
-    <script>
-        // Mobile menu toggle
-        document.getElementById('menu-toggle').addEventListener('click', function () {
-            const menu = document.getElementById('mobile-menu');
-            menu.classList.toggle('hidden');
-        });
-
-        // Smooth scrolling
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                const targetId = this.getAttribute('href');
-                if (targetId === '#') return;
-
-                e.preventDefault();
-                const targetElement = document.querySelector(targetId);
-
-                if (targetElement) {
-                    window.scrollTo({
-                        top: targetElement.offsetTop - 80,
-                        behavior: 'smooth'
-                    });
-                    document.getElementById('mobile-menu').classList.add('hidden');
-                }
-            });
-        });
-    </script>
-</body>
-
-</html>
+    <a href="https://wa.me/+5521969061550" target="_blank" class="fixed bottom-
